@@ -1,0 +1,184 @@
+/* neue MA-Listen ---- */
+table#ma_head, table#ma_listen {
+  margin-bottom:1em;
+  margin-top:0.5em;
+}
+table#ma_head td.head {
+  margin-bottom:0.5em;
+}
+table#ma_listen tr.head td {
+  color:235784;
+  font-weight:bold;
+}
+table#ma_listen tr:nth-child(even) {
+  background: #e7e8e9; 
+}
+table#ma_listen tr:nth-child(odd) {
+  background: #FFFFFF; 
+}
+table#ma_head col:nth-child(odd), table#ma_listen col:nth-child(odd) {
+  width:200px;
+}
+table#ma_head col:nth-child(even), table#ma_listen col:nth-child(even) {
+  width:350px;
+}
+/* neuer MA-Listen ende */
+
+.box_area { 
+  margin-left:10px;
+}
+/* neu: Formularfelder Personensuche: */
+.personen_suche .suchtext {
+  background-color:#86b3d3; 
+  border-color: #1E527D #92ACC4 #92ACC4 #1E527D; 
+  border-style:solid;  
+  border-width:1px;  
+  color:#FFFFFF; 
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  height:18px;
+  line-height:18px;
+  margin:0 6px;
+  padding:1px 3px;
+  width:188px;
+}
+.personen_suche .go {
+background-color:#235784;
+border-color:#669999 #99CCCC #99CCCC #669999;
+border-style:solid;
+border-width:1px;
+color:#FFFFFF;
+font-family:Arial,Helvetica,sans-serif;
+font-size:11px;
+font-weight:bold;
+height:18px;
+margin:0 6px;
+padding:1px 3px;
+}
+ul.personen_suche {
+  list-style-image:url(icon_pfeil.gif);   
+}
+
+/* dokumentlisten-formatierung ---- */
+table#teaserliste {
+  /* border:1px solid #993333; */
+  margin:0.5em 0;
+}
+table#teaserliste td.teaser_description {
+  margin:0!important;
+}
+table#teaserliste img {
+  margin: 0 0.8em 0 0;
+}
+table#teaserliste tr.head td {
+  background-image:url(wsl_bg_teaserliste.gif ); background-repeat:repeat-x;
+  border-bottom:1px solid #0298DA; /*mm*/
+  border-top:1px solid #0298DA; /*mm*/
+  color:#235784; /*mm*/
+  white-space:nowrap; 
+  margin:0;
+  line-height:1em;
+}
+table#teaserliste tr.head {
+    border:1px solid #993333;
+}
+table#teaserliste tr.head strong {
+  color: #235784; /*mm*/
+}
+table#teaserliste tr.head a {
+  color:#993333;
+}
+table#teaserliste a.titel {
+  text-decoration:none;
+  font-weight:bold;
+  color:#235784; /*mm*/
+}
+table#teaserliste a.titel:hover {
+  text-decoration:underline;
+  color:#993333;
+}
+table#teaserliste .auswahlfeld {
+  height:18px;
+  line-height:18px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  padding:0 0 0 3px;
+  color: #FFFFFF;
+  background-color:#86b3d3; /*mm*/
+  border-color: #1E527D #92ACC4 #92ACC4 #1E527D; /*mm*/
+  border-style:solid;  /*mm*/
+  border-width:1px;  /*mm*/
+}
+table#teaserliste .auswahlfeld selected {
+  color: #993333;
+  font-weight:bold;
+}
+table#teaserliste .go {
+  height:18px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  color:#FFFFFF;
+  font-weight:bold;
+  margin:0 6px;
+  padding:1 3px;
+  background-color:#479090;
+  border-color:#669999 #99CCCC #99CCCC #669999;
+  border-style:solid;
+  border-width:1px;
+}
+.docliste_batch {
+  text-align:right; 
+  float:right;
+}
+.docliste_batch img {
+  margin:0;
+  vertical-align:top;
+}
+.docliste_counter {
+  margin:0 0.5em;
+}
+.docliste_alle strong, .docliste_counter b {
+  color:#0298DA; /*mm*/
+}
+.docliste_alle  a, .docliste_counter a {
+  color:#0298DA; /*mm*/
+}
+.docliste_counter span {
+  margin:0 0.1em;
+}
+/* dokumentlisten-formatierung Ende */
+
+/* teaserauswahl ---- */
+table#teaser_auswahl {
+  margin:0.5em 0;
+}
+table#teaser_auswahl td.teaser_description {
+  margin:0px!important;
+
+}
+table#teaser_auswahl img {
+  margin: 0 0.8em 0 0;
+}
+table#teaser_auswahl a.titel {
+  text-decoration:none;
+  font-weight:bold;
+  color:#235784; /*mm*/
+}
+/* teaserauswahl Ende */
+
+/* neue sprachnavi */
+.sprache_on {
+  font-weight:bold;
+  border-right: 1px solid #0099CC;
+}
+.sprache_off {
+  border-right: 1px solid #0099CC;
+}
+.sprache_off:hover {
+  
+}
+.sprache_off_non {
+  color: #B5B5B5!important;
+  border-right: 1px solid #0099CC;
+  cursor: default;
+}

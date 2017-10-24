@@ -1,0 +1,16 @@
+/* winter 
+body {
+  background-image:  url("bg2_norm.jpg");
+}
+body#home {
+  background-image:  url("bg2_start.jpg");
+}
+*/
+/* sommer */
+body {
+  background-image:  url("bg2_norm_sommer.jpg");
+}
+body#home {
+  background-image:  url("bg2_start_sommer.jpg");
+}
+

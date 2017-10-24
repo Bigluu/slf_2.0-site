@@ -1,0 +1,652 @@
+/*  name:    content.css*     */
+/*  author:  Martin Moritzi */
+/*  version: 1.0            */
+/*  date:    2008-07-07     */
+
+/* neuer eventkalender */
+table.eventkalender td {
+  border-bottom: 1px solid #1E9ED6;
+  line-height:1.25em;
+}
+table.eventkalender td a strong {
+  color:#1E9ED6;
+}
+table.eventkalender td a:hover strong {
+  color:#067FB2;
+}
+/* 16.04.2009 gerber@slf.ch added section "nationales Lawinenbulletin" /*
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight:bold;
+  color: #235784;
+  line-height:1.1em;
+  margin:0.5em 0 0 0;
+}
+#standard h3, #standard h4, #standard h5, #standard h6 {
+  margin-top:1.5em;
+}
+td #standard h3, td #standard h4, td #standard h5, td #standard h6 {
+  margin:0 0.5em 0 0!important;
+}
+h2 {
+  font-size:20px;
+  margin:0;
+}
+h3 {
+  font-size:16px;
+}
+h4 {
+  font-size:16px;
+}
+td h4 {
+  margin-top:0.5em!important;
+}
+h5 {
+  font-size:100%;
+  color: #333333;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration:none;
+}
+h6 {
+  font-size:100%;
+  font-weight:normal;
+  color: #333333;
+}
+h6.minor {
+  border-top: 1px solid #235784; 
+  font-size: 0;
+  overflow:hidden;
+  margin: 10px 0;
+  color:#FFFFFF;
+}
+p, td {
+  font-size:12px;
+  margin: 0.5em 0em;
+  line-height:1.5em;
+  color:#686868;
+}
+p.annotation {
+    border-color: #067fb2;
+    border-style: solid;
+    border-width: 2px;
+    overflow: hidden !important;
+    padding: 0.1em 10px;
+}
+
+img {
+  margin: 0.5em 0em;
+}
+p.aktuell {
+  margin: 2px 0em!important;
+  line-height:1em!important;
+}
+p.gueltig_bis {
+  line-height: 0.2em !important;
+  margin: 0 0 15px 0 !important;
+}
+p.lead, b, strong {
+  font-weight: bold;
+  color:#333333;
+}
+
+/* alignments */
+.image-left {
+  text-align: left;
+}
+.image-center {
+  text-align: center;
+}
+.image-right {
+  text-align: right;
+}
+.float-left {
+  float: left;
+  margin-right: 1em;
+  clear: none;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1em;
+  clear: none;
+  margin-bottom: 1em;
+}
+
+/* tabellen ----*/
+table.silvatable {
+  empty-cells: show;
+  border-collapse: collapse;
+  margin: 0.5em 0em;
+} 
+table.silvatable tr.rowheading {
+  font-weight: bold;
+   color:#235784;
+}
+td, table.silvatable td {
+  /* border-right: none ! important;
+  font-size:12px; */
+  vertical-align:top!important;
+} 
+table.silvatable th.align-left, table.silvatable td.align-left {
+  text-align: left;
+}
+table.silvatable th.align-center, table.silvatable td.align-center {
+  text-align: center;
+}
+table.silvatable th.align-right, table.silvatable td.align-right {
+  text-align: right;
+}
+table.plain {
+  border-style: none;
+} 
+table.plain td {
+  border-right: none ! important;
+  padding:0;
+}
+table.list td {
+  border-bottom: 1px solid #333333;
+} 
+table.plain tr.rowheading td, table.list tr.rowheading td, table.datagrid tr.rowheading td, table.list thead th {
+  border-bottom: 1px solid #333333;
+}
+table.grid {
+  width:250px; 
+  float: right;
+  margin-left: 25px;
+  margin-bottom: 1em;
+  clear: none;
+  margin-top: 0em;
+}
+table.grid td, table.grid thead th {
+  font-size: 11px; 
+  padding-left:0;
+  padding-right:0;
+} 
+table.grid tr.rowheading td {
+  font-weight:normal;
+}
+table.datagrid td {
+  border: 1px solid #666666!important;
+  border-right: 1px solid #666666!important;
+} 
+table.datagrid tr.rowheading td {
+  border-top-style: none ! important;
+  border-left-style: none ! important;
+  border-right-style: none ! important;
+}
+
+/* listen ----*/
+ul {
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+  margin-left:20px;
+  padding:0px;
+}
+ul.disc {
+  list-style-type: disc;
+}
+ul.nobullet {    
+  list-style-type: none;   
+}
+ul.circle {
+  /* list-style-type: circle; */
+  list-style-image:url(icon_pfeil_klein.gif)
+} 
+ul.square {
+  /* list-style-type: square; */
+  list-style-image:url(icon_pfeil.gif)
+}
+ul.square ul, ul.square ol {
+  list-style-image:none ! important;
+} 
+ul.square ul.square {
+  list-style-image:url(icon_pfeil.gif)! important;
+}
+ol.decimal {
+  list-style-type: decimal;
+} 
+ol.upper-roman {
+  list-style-type: upper-roman;
+}
+ol.lower-roman {
+  list-style-type: lower-roman;
+}
+ol.upper-alpha {
+  list-style-type: upper-alpha;
+}
+ol.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+/* boxen ---- */
+.box_area {
+  width:200px;
+  overflow:hidden;
+  margin:0 0 15px 14px;
+  background-color:#e6f4fa;
+  padding: .2em;
+  color: #003366;
+}
+.box_area_fullwidth {
+  width:500px;
+  overflow:hidden;
+  margin:0 0 15px 14px;
+  background-color:#e6f4fa;
+  padding: .2em;
+  color: #003366;
+}
+.box_area p {
+  margin:0.25em 0;
+  padding:0;
+  line-height:1.5em;
+}
+.box_area ul {
+  margin:0;
+  padding:0;
+  line-height:1.5em;
+  list-style-image:url(icon_pfeil_li.gif);
+  list-style-position:inside;
+  text-indent:0px;
+}
+.box_area ul.circle {
+  list-style-position:outside;
+  margin-left:2px;
+  padding-left:20px;
+}
+.box_area h2 {
+  margin:0;
+  white-space:nowrap;
+  overflow:hidden;
+}
+.box_area h4 {   /* sub-title */  
+  overflow:hidden;
+}
+.box_area h2, .box_area h3, .box_area h4, .box_area h5, .box_area p, .box_area td, .box_area ol, .box_area ul {
+  font-size:11px;
+}
+/* hintergrund boxcontainer bei normalen boxen */
+#standard #box_container, #schneeinfo #box_container {
+  background-image:url(box_hg.gif);
+  background-repeat:repeat-y;
+}
+/* boxen ende */
+
+/* Veranstaltungskalender ---- */
+table.event_edit td{
+  padding:0.5em 1em;
+}
+table.event_edit_nopadding td{
+  padding:0 0.25em;
+}
+
+table.event_edit .nocourier {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size:12px;   
+}
+table.eventliste_auswahl {
+   width:100%;
+   margin: 4px 0 10px 0;
+   height:18px;
+   border-top:1px solid #666666; 
+   border-bottom:1px solid #666666; 
+}
+table.eventliste_auswahl b {
+   color:#235784; 
+}
+table.eventliste_auswahl .go {
+   font-size:11px;
+   border:1px solid #666666; 
+   width:22px;
+}
+ul.eventliste_auswahl_none {
+   margin-left:2.6em;
+   padding:0px 0px 0px 20px;
+   list-style-image:url(box_bullet.gif)
+}
+table.eventliste_auswahl .suchtext {
+   font-size:11px;
+   width:130px;
+   border: 1px solid #666666; 
+   padding: 0px 3px;
+   margin-left:12px;
+}
+table.eventliste_auswahl .auswahl_field {
+   width: 130px;
+   border: 1px solid #666666;
+   padding: 0 3px;
+   font-size: 11px;
+   margin-left:12px;
+}
+table.eventliste td {
+  padding:0 0 4px 1em;
+  vertical-align:top;
+}
+table.eventliste img {
+  padding-left:1.6em;
+}
+.eventliste h4 { /* Titel der Veranstaltung ohne Abstand oben */
+  margin-top:0;
+}
+  /* veranstaltungskalender box ---- */
+  p.event_box {
+    margin:2px 1px;
+  }
+  ul.show_all {
+    margin-left:5px;
+    padding:5px 0px 0px 20px;
+    list-style-image:url(box_bullet.gif)
+  }
+  ul.show_all a {
+    vertical-align:top;
+  }
+  /* ende veranstaltungskalender box */
+
+  /* veranstaltungskalender manage ---- */
+  .errortext {
+    font-weight: normal;
+    font-family: Verdana,Arial,Helvetica,sans-serif;  
+    color: #FF0000; 
+    padding: 5px;    
+  }
+  .deletetext {
+    font-weight: bold;
+    color: #FF0000; 
+    padding: 5px;    
+  }
+  .statustext {
+    color: #006666; 
+    padding: 5px;    
+  }
+  .offline { 
+    color: #FFCC66; 
+  }
+  .online {
+    color: #006666; 
+  }
+  /* ende veranstaltungskalender manage */
+
+/* ende veranstaltungskalender */
+
+/* dokumentlisten-formatierung ---- */
+.docliste {
+   clear:left;
+}
+.docliste a {
+   text-decoration:none;
+}
+.docliste p, .docliste h6 {
+   margin-bottom:0;
+}
+.infotab  {
+   margin-left:165px;
+   margin-bottom: 10px!important;
+}
+.infotab td {
+   padding: 0 0 0 15px;
+   font-size:11px;
+}
+.docliste_blaettern {
+   margin: 0.5em 0;
+   padding:3px 3px 0 3px;
+   border-top:1px solid #235784;
+   border-bottom:1px solid #235784;
+}
+
+.u_docliste {
+   white-space:nowrap;
+   border-top:1px solid #235784;
+   margin-top: 0.5em;
+   padding-top:3px;
+}
+
+.docliste_blaettern a, .u_docliste a {
+   text-decoration: none;
+}
+.docliste_blaettern td {
+  vertical-align:top; 
+   background-color:#ababab;
+}
+.docliste_blaettern form { 
+  white-space:nowrap;
+}
+.docliste_blaettern .select, .docliste_blaettern .text, .docliste_blaettern .go {
+   border: 1px solid #FFCC66; 
+   margin-right:5px; 
+   font-size:11px;
+}
+.docliste_blaettern img, .u_docliste img {
+  margin:0!important;
+}
+
+  /* teaser_crop 150x100 ---- */
+  div.teaser_b { 
+     height:100px;
+     width:150px;
+     overflow:hidden; 
+     float:left;
+     margin-bottom: 10px!important;
+  }
+  /* ende teaser_crop 150x100 */
+/* ende dokumentlisten-formatierung */
+
+/* alpeninfo ---- */
+.alpeninfo h2 {
+  font-size:16px;
+  color: #235784;
+  line-height:1.5em;
+  margin:0.5em 0 0 0;
+}
+.alpeninfo h2 a {
+  text-decoration:none;
+  color: #235784;
+}
+.alpeninfo pre {
+
+}
+/* alpeninfo ende */
+
+/* downloadlisten-formatierung ---- */
+.download_liste {
+   margin:1em 0;
+}
+.download_liste td {
+   padding:3px;
+}
+.download_liste p {
+   margin:0 15px;
+   font-size:90%;
+   color:#686868;
+}
+.download_liste a {
+   /* text-decoration:none; */
+}
+.download_liste td img {
+  vertical-align:bottom;
+  margin:0;
+}
+tr.listline td {
+  border-bottom: 1px solid #25b2ff;
+  color:#686868;
+} 
+tr.listline strong {
+  color:#686868; }
+/* ende downloadlisten-formatierung */
+
+/* permafrost-unfrageformular ---- */
+table.permfrost_formular td {
+  padding-right:10px;
+}
+table.permfrost_formular .textfeld, table.permfrost_formular textarea, table.permfrost_formular select {
+  padding:0 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #686868;
+  border: 1px solid #1E527D;
+  border-right-color: #92ACC4;
+  border-bottom-color: #92ACC4;
+}
+/* permafrost-unfrageformular ende */
+
+/* sonder-styles ---- */
+
+.lightbox_thumbnail portrait {
+   color:#686868!important;
+}
+table.gefahrenkarte_legende {
+  align:left; margin-bottom: 25px;
+}
+table.gefahrenkarte_legende td {
+  padding-right:20px!important;
+}
+table.gefahrenkarte_legende td img {
+  vertical-align:bottom;
+}
+
+
+/* scs_gefahren_tabelle */
+.gefahrenstufen td {
+  font-size:11px;
+  vertical-align:top;
+  border: 1px solid #666666;
+  border-right: 1px solid #666666! important;
+  padding:3px;
+}
+.gefahrenstufen tr.head td {
+  vertical-align:bottom;
+}
+
+/* suchergebnisse */
+
+ul.suchergebnisse {    
+  list-style-type: none; 
+  margin-left:0;
+  padding:0;  
+}
+.suchergebnisse p {    
+  line-height:1.2em;
+}
+li.blaettern {
+  border-bottom: 1px solid #666666!important;
+}
+.blaettern a { 
+  font-weight:bold;
+  color: #333333;
+  text-decoration:none;
+}
+.blaettern .next{ 
+  text-align: right; 
+  float: right;
+}
+
+/* rueckmeldeformulare ---- */
+#hiddendiv {
+  display:none;
+}
+table.rueckfrageformular .textfeld, table.rueckfrageformular textarea, table.rueckfrageformular select {
+  padding:0 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #686868;
+  border: 1px solid #1E527D;
+  border-right-color: #92ACC4;
+  border-bottom-color: #92ACC4;
+}
+table.rueckfrageformular tr.zwischentitel td {
+  border-bottom: 1px solid #1E527D;
+}
+table.rueckfrageformular img {
+  vertical-align:middle;
+  margin:0;
+}
+/* rueckmeldeformulare ende */
+
+/* lawinenbulletin-formatierungen ---- */
+p.flash { /* text zu bulletin-flash (uebersicht und sommerbulletin-box) */
+  font-weight:bold;
+}
+p.update { 
+  margin-top:0;
+  margin-bottom:1em;
+}
+/* lawinenbulletin-formatierungen ende */
+
+/* nationales Lawinenbulletin */
+div.nb h3 {
+  margin-top:1em;
+  margin-bottom:0.5em;
+}
+
+div.nb p.valid {
+  font-weight:bold;
+  line-height:1.1em;
+  margin:0.5em 0 0.5em 0;
+  font-size:14px;
+}
+
+div.nb p.flash { 
+  font-weight:bold;
+  font-style:oblique;
+
+}
+
+div.nb p.update { 
+  margin-top:0;
+  margin-bottom:1em;
+}
+
+div.nb p.danger-level { 
+  font-weight:bold;
+  font-style:oblique;
+  margin-left:2em;
+}
+
+div.nb p.description { 
+  margin-left:2em;
+}
+
+/* nationales Lawinenbulletin  ende */
+
+#home ul.circle{ /* 'Detail'-Link unter home */
+  list-style-image:url(icon_pfeil_li.gif);
+  margin-left:2px;
+  padding-left:20px;
+}
+
+a.button { /* Link zu Fremdsprach-Bulletins unter Uebersicht und Summerbulletin-Box */ 
+  font-size:11px;
+  color:#ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(button.jpg);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 64px;
+  text-decoration: none;
+  display: block;
+  line-height: 1.6em;
+}
+a.button:hover {
+  font-size:11px;
+  color:#235784;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(button.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 17px;
+  width: 64px;
+}
+.sitemap {
+  width: 390px;
+}
+
+h5.projektinfo_title  {
+  margin-top:16px!important;
+  padding-top:8px!important;
+  border-top: 1px solid #686868; 
+  color: #235784;
+}
+
+/* sonder-styles ende */

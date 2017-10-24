@@ -1,0 +1,1144 @@
+/*  name:    basis.css*     */
+/*  author:  Martin Moritzi */
+/*  version: 1.0            */
+/*  date:    2008-07-07     */
+
+
+/* allgemeine style-informationen ---- */
+img, a img, table, form { border:0; }
+form { margin:0; }
+a { 
+  color: #0298da;
+  text-decoration: underline;
+}
+a:hover {
+  color: #235784;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0px;
+  background-repeat: repeat-x;
+  background-position: top center;
+  /* overflow: -moz-scrollbars-vertical; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;  
+  background-image:  url("bg_standardseiten.jpg");
+  color:#686868;
+} 
+.body_table {
+  margin-bottom:-25px;
+}
+body#home {       
+  background-image:  url("bg_startseite.jpg");
+} 
+.service_area {
+  background-image:url(bg_service_area.gif);
+  font-size:11px;
+  background-repeat:no-repeat;
+}
+#footer_area {
+  width:100%; 
+  text-align:center; 
+  margin: 0 auto;
+  clear:both;
+}
+.footer { 
+  background-image:url(bg_footer_area.gif);
+  text-align:center;
+  font-size:11px;
+  color:#FFFFFF;
+  line-height:25px;
+  height:25px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.footer a {
+  color:#CCFFFF;
+}
+.footer a:hover {
+  color:#FFFFFF;
+}
+/* allgemeine style-informationen ende */
+
+/* navigations-elemente ---- */
+/* hauptnavigation ---- */
+.main_nav_position {
+  position:relative;
+  top:57px;
+  z-index:100; 
+}
+#home .main_nav_position {
+  position:relative;
+  top:183px;
+}
+.main_nav { 
+  position:absolute;
+  top:0px;
+  left:0px;
+  font-size:11px;
+  line-height:25px;
+  height:25px; 
+  z-index:103; 
+  width:100%;
+  background:  url("bg_main_nav.gif") no-repeat left top;
+  /* overflow:hidden; */
+}
+.main_nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.main_nav li {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+.main_nav a, .main_nav a:hover {
+  float:left;
+  margin:0;
+  padding:0 0 0 10px; 
+  text-decoration:none;
+  cursor:pointer;
+}
+.main_nav a span, .main_nav a:hover span {
+  float:left; /*ggf. none fr ie5-mac*/
+  display:block;
+  padding:0 10px 0 0; 
+}
+.main_nav a.mainnav_off {
+  background: url("bg_mainnav_left.gif") no-repeat left top;
+}
+.main_nav a.mainnav_off span {
+  background: url("bg_mainnav_right.gif") no-repeat right top;
+  color:#b4e9ff;
+}
+.main_nav a.mainnav_off:hover, .main_nav a.mainnav_on {
+  background: url("bg_mainnav_left_a.gif") no-repeat left top;
+}
+.main_nav a.mainnav_off:hover span, .main_nav a.mainnav_on span {
+  background: url("bg_mainnav_right_a.gif") no-repeat right top;
+  color:#FFFFFF;
+}
+.main_nav .homelink a.mainnav_off {
+  background: url("bg_mainnavhome.gif") no-repeat left top;
+}
+.main_nav .homelink a.mainnav_off:hover, .main_nav .homelink a.mainnav_on {
+  background: url("bg_mainnavhome_a.gif") no-repeat left top;
+}
+.main_nav .hide_subnav a.mainnav_off, .main_nav .hide_subnav a.mainnav_off:hover {
+  background: url("bg_mainnav_left.gif") no-repeat left top;
+}
+/* hauptnavigation ende */
+
+/* klappmenu neu ---- */
+#lawinenbulletin_rollover_de, #schneeinfo_rollover_de, #praevention_rollover_de, #forschung_rollover_de, #slf_rollover_de, #dienstleistungen_rollover_de, 
+#lawinenbulletin_rollover_en, #schneeinfo_rollover_en, #praevention_rollover_en, #forschung_rollover_en, #slf_rollover_en, #dienstleistungen_rollover_en, 
+#lawinenbulletin_rollover_fr, #schneeinfo_rollover_fr, #praevention_rollover_fr, #forschung_rollover_fr, #slf_rollover_fr, #dienstleistungen_rollover_fr, 
+#lawinenbulletin_rollover_it, #schneeinfo_rollover_it, #praevention_rollover_it, #forschung_rollover_it, #slf_rollover_it, #dienstleistungen_rollover_it  {
+  position:absolute;
+  top:25px;
+  visibility:hidden;
+  line-height:18px;
+  height:18px; 
+  font-size:11px;
+  z-index:102;
+  background-color:#336699;
+}
+#lawinenbulletin_rollover_de a, #schneeinfo_rollover_de a, #praevention_rollover_de a, #forschung_rollover_de a, #slf_rollover_de a, #dienstleistungen_rollover_de a, 
+#lawinenbulletin_rollover_en a, #schneeinfo_rollover_en a, #praevention_rollover_en a, #forschung_rollover_en a, #slf_rollover_en a, #dienstleistungen_rollover_en a, 
+#lawinenbulletin_rollover_fr a, #schneeinfo_rollover_fr a, #praevention_rollover_fr a, #forschung_rollover_fr a, #slf_rollover_fr a, #dienstleistungen_rollover_fr a, 
+#lawinenbulletin_rollover_it a, #schneeinfo_rollover_it a, #praevention_rollover_it a, #forschung_rollover_it a, #slf_rollover_it a, #dienstleistungen_rollover_it a {
+  padding:0 10px;
+  display:block;
+  text-decoration:none;
+  background:  url("bg_subnav.gif") repeat left top;
+  color:#b4e9ff;
+}
+#lawinenbulletin_rollover_de a:hover, #schneeinfo_rollover_de a:hover, #praevention_rollover_de a:hover, #forschung_rollover_de a:hover, #slf_rollover_de a:hover, #dienstleistungen_rollover_de a:hover, 
+#lawinenbulletin_rollover_en a:hover, #schneeinfo_rollover_en a:hover, #praevention_rollover_en a:hover, #forschung_rollover_en a:hover, #slf_rollover_en a:hover, #dienstleistungen_rollover_en a:hover, 
+#lawinenbulletin_rollover_fr a:hover, #schneeinfo_rollover_fr a:hover, #praevention_rollover_fr a:hover, #forschung_rollover_fr a:hover, #slf_rollover_fr a:hover, #dienstleistungen_rollover_fr a:hover, 
+#lawinenbulletin_rollover_it a:hover, #schneeinfo_rollover_it a:hover, #praevention_rollover_it a:hover, #forschung_rollover_it a:hover, #slf_rollover_it a:hover, #dienstleistungen_rollover_it a:hover {
+  padding:0 10px;
+  display:block;
+  text-decoration:none;
+  background:  url("bg_subnav_a.gif") repeat left top;
+  color:#235784;
+}
+#rollout_area {
+  position:absolute;
+  top:-20px;
+  left:20px;
+  display: block;
+  width: 670px;
+  height: 310px; 
+  margin: 0;
+  padding: 0;
+  visibility:hidden;
+  z-index:101;
+  background-image:  url("pix.gif");
+}
+/* Rollover positionen */
+/* de */
+#lawinenbulletin_rollover_de {
+  left:47px;
+}
+#schneeinfo_rollover_de {
+  left:142px;
+}
+#praevention_rollover_de {
+  left:217px;
+}
+#forschung_rollover_de {
+  left:288px;
+}
+#slf_rollover_de {
+  left:442px;
+}
+#dienstleistungen_rollover_de {
+  left:503px;
+}
+/* en */
+#lawinenbulletin_rollover_en {
+  left:47px;
+}
+#schneeinfo_rollover_en {
+  left:161px;
+}
+#praevention_rollover_en {
+  left:267px;
+}
+#forschung_rollover_en {
+  left:338px;
+}
+#slf_rollover_en {
+  left:489px;
+}
+#dienstleistungen_rollover_en {
+  left:549px;
+}
+/* fr */
+#lawinenbulletin_rollover_fr {
+  left:47px;
+}
+#schneeinfo_rollover_fr {
+  left:174px;
+}
+#praevention_rollover_fr {
+  left:255px;
+}
+#forschung_rollover_fr {
+  left:326px;
+}
+#slf_rollover_fr {
+  left:487px;
+}
+#dienstleistungen_rollover_fr {
+  left:541px;
+}
+/* it */
+#lawinenbulletin_rollover_it {
+  left:47px;
+}
+#schneeinfo_rollover_it {
+  left:168px;
+}
+#praevention_rollover_it {
+  left:258px;
+}
+#forschung_rollover_it {
+  left:338px;
+}
+#slf_rollover_it {
+  left:447px;
+}
+#dienstleistungen_rollover_it {
+  left:493px;
+}
+/* klappmenu neu ende */
+
+/* service-navigation ---- */
+.service_nav_position {
+  position:relative;
+  top:4px;
+  left:0;
+  /* z-index:200; */
+}
+.service_nav {
+  font-size:11px;
+  /* z-index:203; */
+  width:100%;
+}
+.service_nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.service_nav li {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+.service_nav a, .service_nav a:hover {
+  float:left;
+  margin:26px 0 0 0;
+  padding:0 9px; 
+  text-decoration:none;
+  color:#0099CC;
+}
+.service_nav a:hover {
+  color:#006699;
+}
+.service_nav a.servicenav_on {
+  color:#006699;
+  font-weight:bold;
+}
+.service_nav a.servicenav_on:hover {
+  color:#0099CC;
+}
+li.noborder a, li.noborder a:hover {
+  border-right:none;
+  font-weight:bold;
+  padding-left:25px;
+}
+li.bold a {
+  font-weight:bold;
+  border-left:1px solid #0099CC;
+}
+/* service-navigation ende */
+
+/* navigation links ---- */
+
+#navigation_area a {
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+
+a.navlevel_1_off {
+  display: block;
+  font-size: 11px;
+  color: #1e9ed6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_main.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  background-repeat: no-repeat;
+  text-indent: 12px;
+  line-height: 1.5em;
+}
+ a.navlevel_1_off:hover {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_main.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  text-indent: 12px;
+  line-height: 1.5em;
+}
+a.navlevel_1_on {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_main_open.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  text-indent: 12px;
+  line-height: 1.5em;
+}
+a.navlevel_1_on_end {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_first_open_end.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  text-indent: 12px;
+  line-height: 1.5em;
+}
+a.navlevel_2_off {
+  display: block;
+  font-size: 11px;
+  color: #1e9ed6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 15px;
+  text-indent: 27px;
+}
+a.navlevel_2_off:hover {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 15px;
+  text-indent: 27px;
+}
+a.navlevel_2_on {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_open.gif); 
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 15px;
+  text-indent: 27px;
+}
+a.navlevel_2_on_end {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_open_end.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 15px;
+  text-indent: 27px;
+}
+a.navlevel_3_off {
+  display: block;
+  font-size: 11px;
+  color: #1e9ed6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 42px;
+  background-position: 30px;
+}
+a.navlevel_3_off:hover {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 30px;
+  text-indent: 42px;
+}
+a.navlevel_3_on {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_open.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 30px;
+  text-indent: 42px;
+}
+a.navlevel_3_on_end {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_open_end.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 30px;
+  text-indent: 42px;
+}
+a.navlevel_4_off {
+  display: block;
+  font-size: 11px;
+  color: #1e9ed6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 57px;
+  background-position: 45px;
+}
+a.navlevel_4_off:hover {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 45px;
+  text-indent: 57px;
+}
+a.navlevel_4_on {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_open.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 45px;
+  text-indent: 57px;
+}
+a.navlevel_4_on_end {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_open_end.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  background-position: 45px;
+  text-indent: 57px;
+}
+a.navlevel_5_off {
+  display: block;
+  font-size: 11px;
+  color: #1e9ed6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 72px;
+  background-position: 60px;
+}
+a.navlevel_5_off:hover {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 72px;
+  background-position: 60px;
+}
+a.navlevel_5_on {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_closed.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 72px;
+  background-position: 60px;
+}
+a.navlevel_5_on_end {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_open_end.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 72px;
+  background-position: 60px;
+}
+a.navlevel_6_off {
+  display: block;
+  font-size: 11px;
+  color: #1e9ed6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 87px;
+  background-position: 75px;
+}
+a.navlevel_6_off:hover {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 87px;
+  background-position: 75px;
+}
+a.navlevel_6_on {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_closed.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 87px;
+  background-position: 75px;
+}
+a.navlevel_6_on_end {
+  display: block;
+  font-size: 11px;
+  color: #067fb2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(nav_pfeil_open_end.gif);
+  width: 100%;
+  text-decoration: none;
+  height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.8em;
+  text-indent: 87px;
+  background-position: 75px;
+}
+a.navlevel_7_off, a.navlevel_7_off:hover, a.navlevel_7_on {
+  display: none;
+}
+/* navigation links ende */
+
+/* bulletin-navigations-elemente ---- */
+.bulletin_navlevel1, .bulletin_navlevel2 {
+  font-size:11px;
+  line-height:20px;
+  height:20px;
+}
+.bulletin_navlevel2 {
+  clear:both;
+  margin-top:16px;
+}
+.bulletin_navlevel1 ul, .bulletin_navlevel2 ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.bulletin_navlevel1 li, .bulletin_navlevel2 li {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+.bulletin_navlevel1 a, .bulletin_navlevel1 a:hover, .bulletin_navlevel2 a, .bulletin_navlevel2 a:hover {
+  float:left;
+  margin:0;
+  padding:0 0 0 10px; /*gleich wie main_nav*/
+  text-decoration:none;
+  cursor:pointer;
+}
+.bulletin_navlevel1 a span, .bulletin_navlevel1 a:hover span, .bulletin_navlevel2 a span, .bulletin_navlevel2 a:hover span {
+  float:left; /*ggf. none für ie5-mac*/
+  display:block;
+  padding:0 10px 0 0; 
+}
+.bulletin_navlevel1 a.level1_off, .bulletin_navlevel2 a.level2_off {
+  background: url("bg_bulletinleft_nav.gif") no-repeat left top;
+}
+.bulletin_navlevel1 a.level1_off span, .bulletin_navlevel2 a.level2_off span {
+  background: url("bg_bulletinright_nav.gif") no-repeat right top;
+  color:#FFFFFF;
+}
+.bulletin_navlevel1 a.level1_off:hover, .bulletin_navlevel2 a.level2_off:hover {
+  background: url("bg_bulletinleft_nav_a.gif") no-repeat left top;
+}
+.bulletin_navlevel1 a.level1_on, .bulletin_navlevel2 a.level2_on {
+  background: url("bg_bulletinleft_nav_a.gif") no-repeat left top;
+}
+.bulletin_navlevel1 a.level1_off:hover span, .bulletin_navlevel2 a.level2_off:hover span, .bulletin_navlevel1 a.level1_on span, .bulletin_navlevel2 a.level2_on span {
+  background: url("bg_bulletinright_nav_a.gif") no-repeat right top;
+  color:#3399CC;
+}
+.bulletin_navlevel1 a.level1_on span, .bulletin_navlevel2 a.level2_on span {
+  font-weight:bold;
+}
+/* bulletin-navigations-elemente ende */
+
+/* navigations-elemente ende */
+
+/* logo-area ---- */
+.logo_area {
+  float:right;
+  margin:0;
+  padding:0 10px;
+  height:37px;
+  line-height:37px;
+}
+.logo_area a, .logo_area a:hover {
+  float:none;
+  border-right: none;
+  margin:0px 2px 0 18px;
+  padding:0;
+}
+.logo_area img {
+  margin: 0;
+}
+/* logo-area ende */
+
+/* quicksearch ---- */
+.suche { 
+  line-height:25px;
+  height:25px;
+  float:right;
+  margin:0;
+}
+.suche input {
+  padding:0 3px;
+  margin:5px;
+  width:116px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #FFFFFF;
+  height: 15px;
+  line-height:15px;
+  background-color: #658BAC;
+  border: thin solid #1E527D;
+  border-right-color: #92ACC4;
+  border-bottom-color: #92ACC4;
+  font-size:11px;
+  float: left;
+}
+.suche a, .suche a:hover {
+  margin:0;
+  padding:0;
+  width:35px;
+  text-decoration:none;
+}
+.suche a {
+  background-image:url(bg_lupe.gif);
+}
+.suche a:hover {
+  background-image:url(bg_lupe_a.gif);
+}
+/* quicksearch ende */
+
+/* sprachen ---- */
+.sprach_area {
+  width:240px; 
+  clear: none;
+  background-image: url("bg_sprach_area.gif");
+  font-size: 11px;
+  position:absolute;
+  right:0; 
+}
+#standard .sprach_area {
+  width:100%;  
+}
+.sprach_area td {
+  vertical-align:middle;
+  text-align:center;
+  width:100%;
+}
+.sprach_area a.sprache_off {
+  color: #FFFFFF;
+  text-decoration: none;
+  line-height: 1.8em;
+  background-image: url(bg_sprache.gif);
+  background-repeat: no-repeat;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.sprach_area a.sprache_off:hover, .sprach_area a.sprache_on {
+  color: #235784;
+  text-decoration: none;
+  line-height: 1.8em;
+  background-image: url(bg_sprache_a.gif);
+  background-repeat: no-repeat;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+/* sprachen ende */
+
+/* printicon ---- */
+
+.sprach_area a.print {
+  line-height: 1.8em;
+  background-image: url(printicon_off.gif);
+  background-repeat: no-repeat;
+  display: block;
+  height: 20px;
+  width: 20px;
+  text-decoration: none;
+  margin-right:20px;
+}
+.sprach_area a.print:hover {
+  line-height: 1.8em;
+  background-image: url(printicon_on.gif);
+  background-repeat: no-repeat;
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin-right:20px;
+}
+/* printicon ende */
+
+/* positionierung inhalte und navi ---- */
+#standard .sprach_area {
+  position:relative;
+  right:0px;
+  top:107px;
+}
+#body_area {
+  /* z-index:100; */
+  position:relative;
+  width:100%; 
+  top:106px;
+  left:0px;
+  clear:both;
+  font-size:12px;
+}
+#home #body_area {
+  top:242px;
+  /* z-index:100; */
+}
+#standard #body_area {
+  top:129px;
+}
+#content_area { 
+  margin:0 0 170px 220px; /* 0 extra */
+}
+#schneeinfo #content_area {
+  margin: 34px 0 160px 0;
+  padding-top: .2em;
+}
+#lawinenbulletin #content_area {
+  margin: 0px 0 160px 0;
+  padding-top: .2em;
+}
+#lawinenbulletin_print #content_area {
+  margin: 0px 0 160px 0;
+  padding-top: .2em;
+}
+#home #content_area {
+  margin:0 0 287px 0;
+}
+#standard .sprach_area {
+  position:relative;
+  right:0px;
+  top:107px;
+}
+#navigation_area {
+  position:absolute;
+  top:0px; 
+  left:0px;
+  margin:0;
+  width:200px;
+  overflow:hidden;
+}
+#box_container, #lawinenbulletin #box_container, #schneeinfo #box_container {
+  /* z-index:100; */
+  float:right;
+  margin-bottom:160px; 
+}
+#home #box_container {
+  margin-bottom:272px;
+}
+#lawinenbulletin #box_container {
+  margin-top:0px;
+}
+#schneeinfo #box_container {
+  margin-top:34px;
+}
+
+/* positionierung inhalte und navi ende */
+
+/* spezielle formate */
+a { 
+  -moz-outline-width: 0; /* keine rahmen um aktive/hover links */
+}
+
+/* projekt-info ---- */
+.projectinfo {
+   font-size:100%! important;
+   margin-top:16px;
+   margin-bottom:3px;
+}
+.projectinfo_tab td {
+   margin:0;
+   padding: 0 10px 0 18px; 
+   vertical-align:top;   
+
+}
+.projectinfo_tab tr.keywords td {
+   padding: 2px 10px 2px 18px; 
+}
+/* ende projekt-info */
+
+p.errortext {
+  font-weight: normal;
+  font-family: Verdana,Arial,Helvetica,sans-serif; 
+  font-size: 8pt; 
+  color: #FF0000; 
+  padding: 6px;    
+  background: #eeeeee;
+  border: 1px solid;	
+  border-collapse: collapse;
+  border-color: #FF0000;  
+}
+
+/* === START Web-Umfrage Fragebogen Gruppenzusammensetzung und Entscheidungsfindung im Lawinengelaende  === */
+table.entscheidungsfindung {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;	  
+	font-size : 8pt;
+	empty-cells: show;
+	border-collapse: collapse;
+	}
+
+table.entscheidungsfindung tr.rowheading  {
+	font-weight : bold;
+	color: #000000; 
+	background: #CCCCCC;
+	padding: 5px;
+	border: 1px solid;
+	border-bottom: 1px solid ! important;
+	} 
+
+table.entscheidungsfindung tr.submit  {		
+    border-top: 1px solid ! important;
+	border-bottom: 1px solid ! important;
+	padding: 5px;
+
+	} 
+.entscheidungsfindung tr.submit td {
+   padding: 10px 3px 10px 3px; 
+}
+
+table.entscheidungsfindung tr.info  {
+    font-size : 8pt;
+	font-weight : normal;
+	background: #FFFFFF;
+	border-bottom: 1px solid ! important;
+	} 
+
+table.entscheidungsfindung tr.odd_grid  {	
+	padding: 5px;
+	background: #EFEFEF;
+	border: 1px solid;
+	color: #000000; 
+	border-bottom: 1px solid ! important;
+	} 
+
+table.entscheidungsfindung tr.white  {	
+	padding: 5px;
+	background: #FFFFFF;
+	border: 1px solid;
+	border-bottom: 1px solid ! important;
+	} 
+	
+table.entscheidungsfindung tr.even_grid  {	
+	padding: 5px;
+	color: #000000; 
+	background: #DFDFDF;	
+	border-bottom: 1px solid ! important;	
+	} 
+
+table.entscheidungsfindung td  {	
+	padding: 6px;
+	} 
+
+table.entscheidungsfindung td.info  {	
+        padding: 1px;	
+	} 
+
+table.entscheidungsfindung td.label  {	
+	font-weight: bold;
+	} 
+
+table.entscheidungsfindung td.label_description  {	
+  font-weight: normal;
+  font-family: Verdana,Arial,Helvetica,sans-serif; 
+  font-size: 8pt;   
+  color: #222222;
+	} 
+
+table.entscheidungsfindung td.right  {	
+	text-align: right; 
+	font-weight : bold;
+        border: 1px solid;
+        border-right: 1px solid ! important;
+	} 
+	
+table.entscheidungsfindung .nocourier {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size:12px;   
+}	
+/* / === END entscheidungsfindung === */
+
+
+
+/* Update Warnprodulte Winter 2012/2012 === */
+
+.column_area h4 {
+    color: #235784;
+    font-size: 16px !important;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+div.loupe {
+  position:relative;
+  top:28px;
+  margin-top:-20px;
+  left:4px;
+  width: 22px;
+  height: 20px; 
+  display: block;
+  xfloat: left;
+  z-index:201;
+  background-image:  url("lupe_schatten.png");
+  cursor: pointer; 
+  cursor: hand;
+}
+
+div.loupe_small {
+  position:relative;
+  top:23px;
+  margin-top:-18px;
+  left:4px;
+  width: 14px;
+  height: 13px; 
+  display: block;
+  xfloat: left;
+  z-index:201;
+  background-image:  url("lupe_schatten_klein.png");
+  cursor: pointer; 
+  cursor: hand;
+}
+
+
+/* Umfrage Start */
+.question_head td {
+  border-bottom:1px solid #000000;
+  border-top:1px solid #000000;
+  padding: 0 10px;
+  height:2em;
+  vertical-align:middle!important;
+}
+.question_answers td {
+  color:#000000;
+  padding: 0 10px;
+  height:2em;
+  vertical-align:middle!important;
+}
+.question_answers_inactive td {
+  color:#CCCCCC;
+  padding: 0 10px;
+  height:2em;
+  vertical-align:middle!important;
+}
+tr.separator td {
+    border-top:1px solid #000000;
+}
+.question_answers input {
+  vertical-align:middle;
+  text-align:center;
+}
+tr.question_answers:nth-child(2n+1) {
+  background: none repeat scroll 0 0 #E7E8E9;
+}
+td.form_button {
+  text-align:center;
+}
+
+td.form_button_sepleft {
+  border-left:1px solid #000000;
+}
+
+.link_zurueck_weiter td {
+  border-bottom:1px solid #000000;
+  border-top:1px solid #000000;
+  padding: 0 10px;
+  height:2em;
+  vertical-align:middle!important;
+  font-weight : bold;
+  background-color:#EFEFEF;
+}
+hr.sep {
+    border-top: solid 1px #CCC;
+    border-bottom:0;
+    border-left: 0;
+    border-right: 0;
+    height:1px;
+}
+table.umfrage_frage td  {	
+    color: #000000;
+}
+/* Umfrage Ende */
+
+
+
+.light-grey {
+  color: #CFCFCF; 
+}
